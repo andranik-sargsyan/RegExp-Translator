@@ -45,7 +45,7 @@ languages.forEach(item => {
             "salary": salary,
             "name": name,
             "age": age
-        }
+        };
 
         let pattern = "\\[temperature]|\\[salary]|\\[name]|\\[age]"
 
