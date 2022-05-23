@@ -47,7 +47,7 @@ languages.forEach(item => {
             "age": age
         };
 
-        let pattern = "\\[temperature]|\\[salary]|\\[name]|\\[age]";
+        let pattern = `\\[${Object.keys(token).join("]|\\[")}]`;
 
         translatedText.innerText = template.replace(new RegExp(`${pattern}`, "g"), function (match) {
             match = match.substring(1, match.length - 1);
